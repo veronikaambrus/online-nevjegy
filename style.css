@@ -1,108 +1,111 @@
 /* CSS reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
-  }
-  /* Pozicionálás */
-  .profile-card {
-    width: 1200px;
-    max-width: calc(100vw - 10px);
-    height: 100%;
-    margin: 0 auto;
-    border-radius: 4px;
-    box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: "Josefin Sans";
-    line-height: 1.5em;
-    color: #515A5A;
-  }
-  .background-image {
-    width: 100%;
-    height: 30%;
-  }
-  .second-row {
-    width: 100%;
-    height: 70%;
-  }
-  .head {
-    width: 40%;
-    height: 100%;
-    text-align: center;
-  }
-  .content {
-    width: 60%;
-    height: 100%;
-    border-left: 1px solid grey;
-    border-top: 1px solid grey;
-  }
-  .left {
-    float: left;
-  }
-  .profile-image {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-    border-top: 1px solid grey;
-  }
-  .name-headline {
-    width: 100%;
-    height: 30%;
-    margin: 0 auto;
-    border-top: 1px solid grey;
-    padding-top: 20px;
-    line-height: 1.2;
-  }
-  .links {
-    width: 100%;
-    height: 30%;
-    margin: 0 auto;
-    border-top: 1px solid grey;
-    padding-top: 20px;
-  }
-  img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    padding: 1px;
-    background-color: #666;
-  }
-  #icons {
-    list-style-type: none;
-  }
-  h1 {
-    text-transform: uppercase;
-    font-size: 28px;
-  }
-  h2 {
-    font-size: larger;
-    padding: 10px;;
-  }
-  #location {
-    font-size: larger;
-  }
-  .fa {
-    color: rgba(34, 34, 34, .6);
-  }
-  span {
-    text-decoration: underline;
-  }
-  .content {
-    padding: 35px;
-    text-align: justify;
-  }
-  .about {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+/* Pozicionálás */
+.profile-card {
+  width: 500px;
+  max-width: calc(100vw - 10px);
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Josefin Sans";
+  line-height: 1.5em;
+  color: #515A5A;
+}
+.background-image {
+  width: 100%;
+  height: 30%;
+  background: url(assets/borítókép.jpg) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.second-row {
+  width: 100%;
+  height: 70%;
+}
+.head {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+}
+.content {
+  width: 60%;
+  height: 100%;
+  border-left: 1px solid grey;
+  border-top: 1px solid grey;
+}
+.left {
+  float: left;
+}
+.profile-image {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  border-top: 1px solid grey;
+}
+.name-headline {
+  width: 100%;
+  height: 30%;
+  margin: 0 auto;
+  border-top: 1px solid grey;
+  padding-top: 20px;
+  line-height: 1.2;
+}
+.links {
+  width: 100%;
+  height: 30%;
+  margin: 0 auto;
+  border-top: 1px solid grey;
+  padding-top: 20px;
+}
+img {
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 1px;
+  background-color: #666;
+  position:sticky;  
+}
+#icons {
+  list-style-type: none;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: x-large;
+}
+h2 {
+  font-size: larger;
+  padding: 10px;;
+}
+#location {
+  font-size: larger;
+}
+.fa {
+  color: rgba(34, 34, 34, .6);
+}
+span {
+  text-decoration: underline;
+}
+.content {
+  padding: 35px;
+  text-align: justify;
+}
+.about {
+  font-size: 18px;
+  font-weight: 600;
+}
