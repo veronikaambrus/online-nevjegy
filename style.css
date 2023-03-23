@@ -8,7 +8,7 @@
   }
   /* Pozicionálás */
   .profile-card {
-    width: 1200px;
+    width: 500px;
     max-width: calc(100vw - 10px);
     height: 100%;
     margin: 0 auto;
@@ -22,11 +22,24 @@
     height: 100vh;
     font-family: "Josefin Sans";
     line-height: 1.5em;
-    color: #515A5A;
+    color: #3d4747;
+    background: url('assets/háttérkép.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
-  .background-image {
+  .cover-image {
     width: 100%;
     height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(104, 133, 83, 0.6);
+  }
+  #cover-image {
+    width: 350px;
+    height: 100%;
+    padding: 1px;
+    background-color: #666; 
+    border-radius: 4%;
   }
   .second-row {
     width: 100%;
@@ -36,12 +49,15 @@
     width: 40%;
     height: 100%;
     text-align: center;
+    background-color: rgba(104, 133, 83, 0.6);
   }
   .content {
     width: 60%;
     height: 100%;
     border-left: 1px solid grey;
-    border-top: 1px solid grey;
+    padding: 15px;
+    text-align: justify;
+    background-color: rgba(161, 206, 130, 0.6);
   }
   .left {
     float: left;
@@ -53,36 +69,43 @@
     justify-content: center;
     align-items: center;
     height: 40%;
-    border-top: 1px solid grey;
   }
   .name-headline {
     width: 100%;
-    height: 30%;
+    height: 60%;
     margin: 0 auto;
     border-top: 1px solid grey;
-    padding-top: 20px;
+    padding: 5px;
     line-height: 1.2;
   }
   .links {
     width: 100%;
     height: 30%;
-    margin: 0 auto;
     border-top: 1px solid grey;
-    padding-top: 20px;
+    padding: 15px;
+    text-align:center;
   }
-  img {
-    width: 150px;
+  #profile-image {
+    width: 120px;
     height: 150px;
     border-radius: 50%;
     padding: 1px;
-    background-color: #666;
+    background-color: #666; 
+    transition: all 0.5s ease-in-out;
   }
-  #icons {
+  #profile-image:hover {
+    transform: scale(1.1);
+    filter: grayscale(20%);
+  }
+  ul {
     list-style-type: none;
+  }
+  li {
+    display: inline;
   }
   h1 {
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: x-large;
   }
   h2 {
     font-size: larger;
@@ -93,13 +116,6 @@
   }
   .fa {
     color: rgba(34, 34, 34, .6);
-  }
-  span {
-    text-decoration: underline;
-  }
-  .content {
-    padding: 35px;
-    text-align: justify;
   }
   .about {
     font-size: 18px;
